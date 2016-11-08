@@ -29,11 +29,14 @@
   "devDependencies": {
     "babel-preset-es2015": "^6.18.0",
     "babelify": "^7.3.0",
-    "budo": "^9.2.1"
+    "browserify": "^13.1.1",
+    "budo": "^9.2.1",
+    "uglify-js": "^2.7.4"
   },
   "scripts": {
     "test": "node test.js",
-    "start": "budo index.js:bundle.js --dir app --live -- -t babelify -t glslify"
+    "start": "budo index.js:bundle.js --dir app --live -- -t babelify -t glslify",
+    "build": "browserify index.js -t babelify -t glslify | uglifyjs -m -c warnings=false > app/bundle.js"
   },
   "keywords": [],
   "repository": {
