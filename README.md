@@ -1,12 +1,8 @@
 # three-fluid-demo
 
-[![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
+An experimental fluid simulation test in ThreeJS.
 
-a little fluid simulation demo in ThreeJS
-
-## Usage
-
-[![NPM](https://nodei.co/npm/three-fluid-demo.png)](https://www.npmjs.com/package/three-fluid-demo)
+Eventually the shaders here will be split into individual GLSL components for use with `glslify`.
 
 ## License
 
